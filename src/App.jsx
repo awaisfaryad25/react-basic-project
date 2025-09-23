@@ -2,7 +2,7 @@
 import './App.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import MainLayout from './pages/MainLayout'
-// import Home from './pages/Home'
+import Home from './pages/Home'
 // import About from './pages/About'
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     {
       path: "/",  element: <MainLayout />,
       children: [
-        // { index: true, element: <Home /> },  
+        { index: true, element: <Home /> },  
         // { path: "about", element: <About /> },
       ]
     }
