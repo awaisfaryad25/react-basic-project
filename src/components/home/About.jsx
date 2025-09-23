@@ -1,6 +1,7 @@
 import React from 'react'
 import Input from '../global/Input'
 import Textarea from '../global/Textarea'
+import Select from '../global/Select'
 
 const About = ({id}) => {
   return (
@@ -10,7 +11,18 @@ const About = ({id}) => {
       <Input placeholder="Primary Input" variant="primary" />
       <Input placeholder="Custom Input" className="bg-gray-100" />
 
+      <Select
+        variant="primary"
+        options={[
+          { label: "Option 1", value: "1" },
+          { label: "Option 2", value: "2" },
+          { label: "Option 3", value: "3" },
+        ]}
+      />
+      
       <Textarea placeholder="Primary Textarea..." variant="primary" />
+
+      
     </div>
     </div>
   )
