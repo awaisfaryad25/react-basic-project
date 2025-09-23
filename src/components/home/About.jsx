@@ -1,5 +1,6 @@
 import React from 'react'
 import Input from '../global/Input'
+import Textarea from '../global/Textarea'
 
 const About = ({id}) => {
   return (
@@ -10,6 +11,8 @@ const About = ({id}) => {
       <Input placeholder="Outline Input" variant="outline" />
       <Input placeholder="Underline Input" variant="underline" />
       <Input placeholder="Custom Input" className="bg-gray-100" />
+
+      <Textarea placeholder="Primary Textarea..." variant="primary" />
     </div>
     </div>
   )
