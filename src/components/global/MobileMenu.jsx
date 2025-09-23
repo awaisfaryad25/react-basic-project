@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { IoIosClose } from "react-icons/io";
-// import Button from "./Button";
+import Button from "./Button";
 import { Link } from "react-router-dom";
 
 const MobileMenu = ({ isOpen, setIsOpen, menuItems, currentPath, isScrolled  }) => {
@@ -61,10 +61,7 @@ const MobileMenu = ({ isOpen, setIsOpen, menuItems, currentPath, isScrolled  }) 
           ))}
         </ul>
         <div className="pr-6">
-          {/* <Button
-            title="Login / Sign"
-            className="w-full text-base text-end pr-8 py-2 border-l-0 rounded-r-full"
-          /> */}
+          <Button label="Login / Sign" variant="primary" onClick={() => alert("Primary clicked")} />
         </div>
       </div>
     </div>

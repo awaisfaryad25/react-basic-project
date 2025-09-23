@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { Link, useLocation } from "react-router-dom";
 // import logo from "../../assets/logo/awais.svg";
-// import Button from "./Button";
+import Button from "./Button";
 import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
@@ -69,7 +69,7 @@ const Navbar = () => {
           </ul>
 
           <div className="hidden md:block">
-            {/* <Button title="Login / Sign" /> */}
+            <Button label="Login / Sign" variant="primary" onClick={() => alert("Primary clicked")} />
           </div>
 
           <div className="md:hidden text-[var(--primary)]">
