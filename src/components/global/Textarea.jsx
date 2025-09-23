@@ -5,12 +5,7 @@ const variantClasses = {
   underline: "border-0 border-b-2 border-gray-400 focus:border-pink-500 rounded-none",
 };
 
-const Textarea = ({
-  variant = "primary",
-  className = "",
-  rows = 4,
-  ...props
-}) => {
+const Textarea = ({ variant = "primary", className = "", rows = 4, ...props }) => {
   return (
     <textarea
       rows={rows}

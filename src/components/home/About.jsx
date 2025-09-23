@@ -8,8 +8,6 @@ const About = ({id}) => {
       About Section
       <div className="p-6 flex flex-col gap-4">
       <Input placeholder="Primary Input" variant="primary" />
-      <Input placeholder="Outline Input" variant="outline" />
-      <Input placeholder="Underline Input" variant="underline" />
       <Input placeholder="Custom Input" className="bg-gray-100" />
 
       <Textarea placeholder="Primary Textarea..." variant="primary" />
