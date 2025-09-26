@@ -2,6 +2,7 @@ import React from 'react'
 import Input from '../global/Input'
 import Textarea from '../global/Textarea'
 import Select from '../global/Select'
+import Checkbox from '../global/Checkbox'
 
 const About = ({id}) => {
   return (
@@ -22,6 +23,8 @@ const About = ({id}) => {
       
       <Textarea placeholder="Primary Textarea..." variant="primary" />
 
+      <Checkbox label="Accept Terms" onChange={() => {}} />
+      <Checkbox label="Subscribe to Newsletter" checked={false} onChange={() => {}} className="text-blue-500" />
       
     </div>
     </div>
