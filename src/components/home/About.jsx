@@ -25,7 +25,8 @@ const About = ({id}) => {
 
       <Checkbox label="Accept Terms" onChange={() => {}} />
       <Checkbox label="Subscribe to Newsletter" checked={false} onChange={() => {}} className="text-blue-500" />
-      
+      <Checkbox label="Default" variant="default" />
+
     </div>
     </div>
   )
