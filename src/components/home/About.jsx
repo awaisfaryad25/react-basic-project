@@ -3,6 +3,7 @@ import Input from '../global/Input'
 import Textarea from '../global/Textarea'
 import Select from '../global/Select'
 import Checkbox from '../global/Checkbox'
+import RadioGroup from '../global/RadioGroup'
 
 const About = ({id}) => {
   return (
@@ -26,6 +27,17 @@ const About = ({id}) => {
       <Checkbox label="Accept Terms" onChange={() => {}} />
       <Checkbox label="Subscribe to Newsletter" checked={false} onChange={() => {}} className="text-blue-500" />
       <Checkbox label="Default" variant="default" />
+
+      <RadioGroup
+        name="example"
+        options={[
+          { label: "Option A", value: "A" },
+          { label: "Option B", value: "B" },
+          { label: "Option C", value: "C" },
+        ]}
+        value="A"
+        onChange={(val) => console.log(val)}
+      />
 
     </div>
     </div>
