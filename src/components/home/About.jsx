@@ -25,8 +25,6 @@ const About = ({id}) => {
       <Textarea placeholder="Primary Textarea..." variant="primary" />
 
       <Checkbox label="Accept Terms" onChange={() => {}} />
-      <Checkbox label="Subscribe to Newsletter" checked={false} onChange={() => {}} className="text-blue-500" />
-      <Checkbox label="Default" variant="default" />
 
       <RadioGroup
         name="example"
