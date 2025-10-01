@@ -19,8 +19,12 @@ const radioOptions = [
   { label: "Option C", value: "C" },
 ]
 
-const About = ({ id }) => (
-  <div id={id}>
+
+const About = ({ id }) => {
+
+  
+  return (
+    <div id={id}>
     About Section
     <div className="p-6 flex flex-col gap-4">
       <Input placeholder="Primary Input" variant="primary" />
@@ -42,6 +46,7 @@ const About = ({ id }) => (
       <Loader size="8" className="border-t-blue-500" />
     </div>
   </div>
-)
+  )
+}
 
 export default About
