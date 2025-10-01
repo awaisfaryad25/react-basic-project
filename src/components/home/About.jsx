@@ -36,7 +36,7 @@ const About = ({ id }) => (
         onChange={console.log}
       />
       <Switch checked={true} onChange={() => {}} />
-      <Modal open={true}  />
+      <Modal   />
         
     </div>
   </div>
