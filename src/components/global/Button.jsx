@@ -1,4 +1,3 @@
-import React from "react";
 
 const variantClasses = {
   primary: "w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-lg border-2 border-transparent transition-all duration-300 hover:text-blue-500 hover:bg-white hover:border-blue-500",

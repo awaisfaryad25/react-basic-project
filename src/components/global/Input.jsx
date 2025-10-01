@@ -1,4 +1,3 @@
-import React from "react";
 
 const variantClasses = {
   primary: "border-2 border-[#FBA8C3] focus:border-pink-500",
