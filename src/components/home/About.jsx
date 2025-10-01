@@ -5,6 +5,7 @@ import Checkbox from '../global/Checkbox'
 import RadioGroup from '../global/RadioGroup'
 import Switch from '../global/Switch'
 import Modal from '../global/Modal'
+import Loader from '../global/Loader'
 
 const selectOptions = [
   { label: "Option 1", value: "1" },
@@ -38,6 +39,7 @@ const About = ({ id }) => (
       <Switch checked={true} onChange={() => {}} />
       <Modal   />
         
+      <Loader size="8" className="border-t-blue-500" />
     </div>
   </div>
 )
