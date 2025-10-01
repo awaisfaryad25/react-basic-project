@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Input from '../global/Input'
 import Textarea from '../global/Textarea'
 import Select from '../global/Select'
@@ -22,7 +23,11 @@ const radioOptions = [
 
 const About = ({ id }) => {
 
-  
+  const [checked, setChecked] = useState(false);
+  const [gender, setGender] = useState("male");
+  const [darkMode, setDarkMode] = useState(false);
+  const [open, setOpen] = useState(false);
+
   return (
     <div id={id}>
     About Section
@@ -32,16 +37,25 @@ const About = ({ id }) => {
       
       <Select variant="primary" options={selectOptions} />
       <Textarea placeholder="Primary Textarea..." variant="primary" />
-      <Checkbox label="Accept Terms" onChange={() => {}} />
-      
+
+      <Checkbox label="Accept Terms" checked={checked} onChange={() => setChecked(!checked)} />
+
       <RadioGroup
-        name="example"
+        name="gender"
+        value={gender}
+        onChange={setGender}
         options={radioOptions}
-        value="A"
-        onChange={console.log}
       />
-      <Switch checked={true} onChange={() => {}} />
-      <Modal   />
+      <Switch checked={darkMode} onChange={setDarkMode} />
+
+      <button onClick={() => setOpen(true)} className="px-4 py-2 bg-pink-500 text-white rounded">
+        Open Modal
+      </button>
+      
+      <Modal open={open} onClose={() => setOpen(false)}>
+        <h2 className="text-lg font-bold">Modal Content</h2>
+        <p>This is inside modal</p>
+      </Modal>
         
       <Loader size="8" className="border-t-blue-500" />
     </div>
