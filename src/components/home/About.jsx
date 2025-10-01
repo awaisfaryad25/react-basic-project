@@ -1,10 +1,10 @@
-import React from 'react'
 import Input from '../global/Input'
 import Textarea from '../global/Textarea'
 import Select from '../global/Select'
 import Checkbox from '../global/Checkbox'
 import RadioGroup from '../global/RadioGroup'
 import Switch from '../global/Switch'
+import Modal from '../global/Modal'
 
 const selectOptions = [
   { label: "Option 1", value: "1" },
@@ -36,6 +36,7 @@ const About = ({ id }) => (
         onChange={console.log}
       />
       <Switch checked={true} onChange={() => {}} />
+      <Modal open={true}  />
         
     </div>
   </div>
