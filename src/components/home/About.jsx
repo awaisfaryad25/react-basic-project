@@ -7,6 +7,7 @@ import RadioGroup from '../global/RadioGroup'
 import Switch from '../global/Switch'
 import Modal from '../global/Modal'
 import Loader from '../global/Loader'
+import Alert from '../global/Alert'
 
 const selectOptions = [
   { label: "Option 1", value: "1" },
@@ -51,13 +52,16 @@ const About = ({ id }) => {
       <button onClick={() => setOpen(true)} className="px-4 py-2 bg-pink-500 text-white rounded">
         Open Modal
       </button>
-      
+
       <Modal open={open} onClose={() => setOpen(false)}>
         <h2 className="text-lg font-bold">Modal Content</h2>
         <p>This is inside modal</p>
       </Modal>
         
       <Loader size="8" className="border-t-blue-500" />
+
+      <Alert type="success" message="This is a success alert" />
+      <Alert type="error" message="This is an error alert" />
     </div>
   </div>
   )
