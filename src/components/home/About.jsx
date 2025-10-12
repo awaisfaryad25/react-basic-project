@@ -58,7 +58,8 @@ const About = ({ id }) => {
         <p>This is inside modal</p>
       </Modal>
         
-      <Loader size="8" className="border-t-blue-500" />
+      <Loader size="md" />
+
 
       <Alert type="success" message="This is a success alert" />
       <Alert type="error" message="This is an error alert" />
