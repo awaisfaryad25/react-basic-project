@@ -1,7 +1,5 @@
 import { useState } from 'react'
 
-import HeroSection from "../components/home/HeroSection";
-import About from "../components/home/About";
 import Input from "../components/global/Input";
 import Textarea from '../components/global/Textarea'
 import Select from '../components/global/Select'
