@@ -30,40 +30,37 @@ const Home = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div>
-      <div className="space-y-4 md:space-y-8 mb-4 md:mb-8">
-        <div className="p-6 flex flex-col gap-4">
-      <Input placeholder="Primary Input" variant="primary" />
-      <Input placeholder="Custom Input" className="bg-gray-100" />
+    <div className="space-y-4 md:space-y-8 mb-4 md:mb-8">
+      <div className="p-6 flex flex-col gap-4">
+        <Input placeholder="Primary Input" variant="primary" />
+        <Input placeholder="Custom Input" className="bg-gray-100" />
       
-      <Select variant="primary" options={selectOptions} />
-      <Textarea placeholder="Primary Textarea..." variant="primary" />
+        <Select variant="primary" options={selectOptions} />
+        <Textarea placeholder="Primary Textarea..." variant="primary" />
 
-      <Checkbox label="Accept Terms" checked={checked} onChange={() => setChecked(!checked)} />
+        <Checkbox label="Accept Terms" checked={checked} onChange={() => setChecked(!checked)} />
 
-      <RadioGroup
-        name="gender"
+        <RadioGroup
+          name="gender"
         value={gender}
         onChange={setGender}
-        options={radioOptions}
-      />
-      <Switch checked={darkMode} onChange={setDarkMode} />
+          options={radioOptions}
+        />
+        <Switch checked={darkMode} onChange={setDarkMode} />
 
-      <button onClick={() => setOpen(true)} className="px-4 py-2 bg-pink-500 text-white rounded">
-        Open Modal
-      </button>
+        <button onClick={() => setOpen(true)} className="px-4 py-2 bg-pink-500 text-white rounded">
+          Open Modal
+        </button>
 
-      <Modal open={open} onClose={() => setOpen(false)}>
-        <h2 className="text-lg font-bold">Modal Content</h2>
-        <p>This is inside modal</p>
-      </Modal>
+        <Modal open={open} onClose={() => setOpen(false)}>
+          <h2 className="text-lg font-bold">Modal Content</h2>
+          <p>This is inside modal</p>
+        </Modal>
         
-      <Loader size="md" />
+        <Loader size="md" />
 
-
-      <Alert type="success" message="This is a success alert" />
-      <Alert type="error" message="This is an error alert" />
-    </div>
+        <Alert type="success" message="This is a success alert" />
+        <Alert type="error" message="This is an error alert" />
       </div>
     </div>
   );
