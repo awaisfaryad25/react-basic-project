@@ -9,11 +9,10 @@ const About = ({ id }) => {
 
   return (
     <div id={id}>
-    About Section
-    <div className="p-6 flex flex-col gap-4">
-
+      <div className="p-6 flex flex-col gap-4">
+        About Page
+      </div>
     </div>
-  </div>
   )
 }
 
