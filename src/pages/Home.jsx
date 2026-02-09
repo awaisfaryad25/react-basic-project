@@ -42,8 +42,8 @@ const Home = () => {
 
         <RadioGroup
           name="gender"
-        value={gender}
-        onChange={setGender}
+          value={gender}
+          onChange={setGender}
           options={radioOptions}
         />
         <Switch checked={darkMode} onChange={setDarkMode} />
