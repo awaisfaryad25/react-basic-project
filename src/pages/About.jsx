@@ -5,8 +5,6 @@
 
 const About = ({ id }) => {
 
-
-
   return (
     <div id={id}>
       <div className="p-6 flex flex-col gap-4">
