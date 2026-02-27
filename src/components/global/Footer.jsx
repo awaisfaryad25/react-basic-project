@@ -3,8 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className="bg-gray-900  text-white">
-      <div className="w-full max-w-[1440px] px-4 py-8 sm:px-6 lg:px-8">
-      <div className="max-w-7x mx-auto">
+      <div className="max-w-[1440px] mx-auto px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* Column 1 - About */}
           <div>
@@ -15,7 +14,6 @@ const Footer = () => {
             </p>
           </div>
         </div>
-      </div>
       </div>
     </footer>
   )
