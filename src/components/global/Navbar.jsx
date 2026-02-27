@@ -44,8 +44,8 @@ const Navbar = () => {
 
   return (
     <nav className={`w-full fixed top-0 left-0 z-40 transition-all duration-300 ${isScrolled && !isOpen  ? "bg-white/20 backdrop-blur-md" : ""}`}>
-      <div className="max-w-[1500px] mx-auto py-3">
-        <div className="w-full max-w-[85%] md:max-w-[1280px] mx-auto flex justify-between items-center">
+      <div className="max-w-[1440px] mx-auto py-3">
+        <div className="w-full max-w-[85%] md:max-w-[1440px] mx-auto flex justify-between items-center">
           <div className="w-full max-w-24 md:max-w-32 drop-shadow-[2px_3px_1px_#000000]">
             <Link to="/">
               {/* <img src={logo} alt="Logo" className="size-full object-fill cursor-pointer" /> */}
