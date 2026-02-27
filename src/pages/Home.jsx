@@ -31,7 +31,7 @@ const Home = () => {
 
   return (
     <div className="space-y-4 md:space-y-8 mb-4 md:mb-8">
-      <div className="p-6 flex flex-col gap-4">
+      <div className="flex flex-col gap-4">
         <Input placeholder="Primary Input" variant="primary" />
         <Input placeholder="Custom Input" className="bg-gray-100" />
       
