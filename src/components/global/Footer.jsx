@@ -13,6 +13,34 @@ const Footer = () => {
               to thrive in their academic journey abroad.
             </p>
           </div>
+          
+          {/* Column 2 - Quick Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a href="/" className="text-gray-400 hover:text-white transition">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/about" className="text-gray-400 hover:text-white transition">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="text-gray-400 hover:text-white transition">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="text-gray-400 hover:text-white transition">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </footer>
