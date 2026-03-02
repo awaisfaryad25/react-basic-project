@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* Column 1 - About */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">About Us</h3>
+            <h3 className="text-lg font-semibold text-left mb-2">About Us</h3>
             <p className="text-gray-400 text-sm">
               We provide resources and support for international students 
               to thrive in their academic journey abroad.
