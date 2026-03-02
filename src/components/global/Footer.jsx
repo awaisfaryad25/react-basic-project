@@ -33,6 +33,33 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Column 3 - Resources */}
+          <div>
+            <h3 className="text-lg text-left font-semibold mb-4">Resources</h3>
+            <ul className="space-y-2 text-sm text-left">
+              <li>
+                <a href="/blog" className="text-gray-400 hover:text-white transition">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="/faq" className="text-gray-400 hover:text-white transition">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a href="/support" className="text-gray-400 hover:text-white transition">
+                  Support
+                </a>
+              </li>
+              <li>
+                <a href="/privacy" className="text-gray-400 hover:text-white transition">
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </footer>
