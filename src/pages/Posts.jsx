@@ -7,6 +7,21 @@ const Posts = () => {
 
   const [posts, setPosts] = useState([]);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    axios.post('http://localhost:3000/create-post', formData)
+      .then((res) => {
+        console.log(res.data);
+        // Optionally, you can update the posts state to include the new post
+  
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+    // Handle form submission logic here
+  }
+
   useEffect(() => {
 
     axios.get('http://localhost:3000/posts')
@@ -15,6 +30,7 @@ const Posts = () => {
       })
 
   }, []);
+
 
   return (
     <div className=''>
@@ -29,14 +45,14 @@ const Posts = () => {
         ) : (<p className="text-center text-gray-500">No posts available.</p>)
         }
       </div>
-      <form action="" className='w-full max-w-xl mx-auto mt-8 p-12 rounded-lg shadow bg-[#f2f4fa]'>
+      <form onSubmit={handleSubmit} className='w-full max-w-xl mx-auto mt-8 p-12 rounded-lg shadow bg-[#f2f4fa]'>
         <h1 className='text-2xl font-bold'>Posts Page</h1>
 
         <div className="w-full max-w-sm mt-4 mx-auto space-y-4">
-          <Input type="file" placeholder="Enter name" className='mb-4'/>
-          <Input type="text" placeholder="Enter name" required className='mb-8'/>
+          <Input type="file" name="image" placeholder="Enter name" className='mb-4'/>
+          <Input type="text" name="caption" placeholder="Enter name" required className='mb-8'/>
 
-          <Button variant="primary" label='Submit'/>
+          <Button variant="primary" label='Submit' type='Submit'/>
         </div>
 
       </form>
