@@ -65,7 +65,7 @@ const Footer = () => {
           {/* Column 4 - Contact */}
           <div>
             <h3 className="text-lg text-left font-semibold mb-4">Follow Us</h3>
-            <ul className="space-y-2 text-sm text-left ">
+            <ul className="flex gap-3 ">
               <li>
                 <a href="/blog" className="text-gray-400 hover:text-white transition">
                   <FaLinkedinIn size={20}/>
