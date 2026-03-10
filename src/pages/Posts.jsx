@@ -12,14 +12,11 @@ const Posts = () => {
     const formData = new FormData(e.target);
     axios.post('http://localhost:3000/create-post', formData)
       .then((res) => {
-        console.log(res.data);
-        // Optionally, you can update the posts state to include the new post
-  
+        console.log(res.data);  
       })
       .catch((err) => {
         console.error(err);
       });
-    // Handle form submission logic here
   }
 
   useEffect(() => {
