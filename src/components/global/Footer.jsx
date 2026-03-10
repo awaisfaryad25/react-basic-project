@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaLinkedinIn, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -63,7 +65,28 @@ const Footer = () => {
           {/* Column 4 - Contact */}
           <div>
             <h3 className="text-lg text-left font-semibold mb-4">Follow Us</h3>
-            
+            <ul className="space-y-2 text-sm text-left ">
+              <li>
+                <a href="/blog" className="text-gray-400 hover:text-white transition">
+                  <FaLinkedinIn size={20}/>
+                </a>
+              </li>
+              <li>
+                <a href="/faq" className="text-gray-400 hover:text-white transition">
+                  < FaFacebookF size={20} />
+                </a>
+              </li>
+              <li>
+                <a href="/support" className="text-gray-400 hover:text-white transition">
+                  < FaInstagram size={20} />
+                </a>
+              </li>
+              <li>
+                <a href="/privacy" className="text-gray-400 hover:text-white transition">
+                  < FaTwitter size={20} />
+                </a>
+              </li>
+            </ul>
           </div>
 
         </div>
