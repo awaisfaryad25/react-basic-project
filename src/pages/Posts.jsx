@@ -28,13 +28,6 @@ const Posts = () => {
 
   }, []);
 
-  function clickButton () {
-    console.log('Button clicked')
-  }
-
-  const buttonClicked = () =>{
-    console.log('Button click')
-  }
 
   return (
     <div className=''>
@@ -58,8 +51,6 @@ const Posts = () => {
           <Input type="text" name="caption" placeholder="Enter name" required className='mb-8'/>
 
           <Button variant="primary" label='Submit' type='Submit'/>
-
-          <button className='border p-3 w-full rounded-lg' onClick={buttonClicked}> Click</button>
 
         </div>
 
