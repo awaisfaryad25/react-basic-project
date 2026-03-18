@@ -38,6 +38,14 @@ const Posts = () => {
     setCount(count - 1);
   }
 
+  const [person, setPerson] = useState({user: 'Awais', age: 30});
+
+  const updatePerson = () => {
+    const newPerson = {...person};
+    newPerson.user = 'Ali';
+    newPerson.age = 25;
+    setPerson(newPerson);
+  }
   return (
     <div className=''>
       
@@ -85,6 +93,9 @@ const Posts = () => {
             + 5
           </button>
         </div>
+
+        <div className="">{person.user}, {person.age}</div>
+        <button onClick={updatePerson}>Update Person</button>
       </div>
     </div>
   )
