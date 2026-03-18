@@ -66,7 +66,25 @@ const Posts = () => {
       </form>
 
       <div className="">
- 
+        <div className="flex gap-4">
+           <button onClick={() => setCount(count - 5)}
+            className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
+          >
+            - 5
+          </button>
+          <button onClick={decrement} className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">
+            -
+          </button>
+          <div className="text-3xl font-bold text-blue-600">
+            {count}
+          </div>
+          <button onClick={increment} className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
+            +
+          </button>
+          <button onClick={() => setCount(count + 5)} className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
+            + 5
+          </button>
+        </div>
       </div>
     </div>
   )
