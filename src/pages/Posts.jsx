@@ -29,23 +29,6 @@ const Posts = () => {
   }, []);
 
 
-  const [count, setCount] = useState(0)
-
-  const increment = () => {
-    setCount(count + 1);
-  }
-  const decrement = () => {
-    setCount(count - 1);
-  }
-
-  const [person, setPerson] = useState({user: 'Awais', age: 30});
-
-  const updatePerson = () => {
-    const newPerson = {...person};
-    newPerson.user = 'Ali';
-    newPerson.age = 25;
-    setPerson(newPerson);
-  }
   return (
     <div className=''>
       
@@ -75,27 +58,9 @@ const Posts = () => {
 
       <div className="">
         <div className="flex gap-4">
-           <button onClick={() => setCount(count - 5)}
-            className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
-          >
-            - 5
-          </button>
-          <button onClick={decrement} className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">
-            -
-          </button>
-          <div className="text-3xl font-bold text-blue-600">
-            {count}
-          </div>
-          <button onClick={increment} className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
-            +
-          </button>
-          <button onClick={() => setCount(count + 5)} className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
-            + 5
-          </button>
+
         </div>
 
-        <div className="">{person.user}, {person.age}</div>
-        <button onClick={updatePerson}>Update Person</button>
       </div>
     </div>
   )
