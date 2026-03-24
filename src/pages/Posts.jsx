@@ -6,6 +6,9 @@ import Button from '../components/global/Button'
 const Posts = () => {
 
   const [posts, setPosts] = useState([]);
+  const [title, setTitle] = useState('');
+  const [details, setDetails] = useState('');
+  const [task, setTask] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,6 +31,16 @@ const Posts = () => {
 
   }, []);
 
+  const formSubmit = (e) => {
+    e.preventDefault();
+    const copyTask = [...task];
+    copyTask.push({ title, details });
+    setTask(copyTask);
+    console.log( copyTask);
+    setTitle('');
+    setDetails('');
+
+  }
 
   return (
     <div className=''>
@@ -58,9 +71,33 @@ const Posts = () => {
 
       <div className="">
         <div className="flex gap-4">
+          <form action="" onSubmit={(e) => {
+            formSubmit(e);
+          }}>
+            <input type="text" className='p-3 border ' value={title} 
+              onChange={(e) => {
+                setTitle(e.target.value)
+              }}
+            />
+            <textarea name="caption" id="" className='p-3 border ' value={details} 
+              onChange={(e) => {
+                setDetails(e.target.value)
+              }}
+            ></textarea>
 
+            <button className='p-3 border '>Submit</button>
+          </form>
         </div>
-
+        <div className="mt-8">
+          <h2 className="text-xl font-bold">Tasks</h2>
+          <ul>
+            {task.map((t, index) => (
+              <li key={index} className="p-2 border-b">
+                <strong>{t.title}</strong>: {t.details}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   )
